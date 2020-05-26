@@ -27,8 +27,16 @@ public void threenumbers() {
 public void delimiters() {
 	Assert.assertEquals(3,StringCalculator.Add("//;\n1;2"));
 	Assert.assertEquals(6,StringCalculator.Add("//;\n1;2;3"));
-	Assert.assertEquals(3,StringCalculator.Add("//;\n1;2;3;4"));
+	Assert.assertEquals(10,StringCalculator.Add("//;\n1;2;3;4"));
 	
 }
 
+ 
+@Test(expected = IllegalArgumentException.class)
+public  void nonegative() {
+	StringCalculator.Add("-1");
+	
 }
+}
+
+

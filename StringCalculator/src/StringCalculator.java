@@ -15,7 +15,15 @@ public class StringCalculator {
 			String[] numAr =input.split(Character.toString(c));
 			
 			 for(int i=0;i<numAr.length;i++)
-			 r=r+ Integer.parseInt(numAr[i]);
+			 {r=r+ Integer.parseInt(numAr[i]);
+			 if (Integer.parseInt(numAr[i])<0)
+			 {throw new IllegalArgumentException("negatives not allowed %d");
+			 
+			 }
+			 }
+			
+			 
+			 			 
 				return r;	
 				
 	}
