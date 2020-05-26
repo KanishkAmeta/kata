@@ -23,4 +23,9 @@ public void threenumbers() {
 	Assert.assertEquals(3,StringCalculator.Add("1,1,1"));
 	Assert.assertEquals(1,StringCalculator.Add("1,0,0"));
 }
+@Test
+public void delimeters() {
+	Assert.assertEquals(3,StringCalculator.Add("//;\n1;2"));
+	
+}
 }
