@@ -11,4 +11,8 @@ public void Stringempty() {
 public void onenumber() {
 	Assert.assertEquals(1,StringCalculator.Add("1")); // inputs single integer in string
 }
+@Test 
+public void twonumber() {
+	Assert.assertEquals(3,StringCalculator.Add("1,2"));
+}
 }
