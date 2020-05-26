@@ -14,5 +14,7 @@ public void onenumber() {
 @Test 
 public void twonumber() {
 	Assert.assertEquals(3,StringCalculator.Add("1,2"));
+	Assert.assertEquals(4,StringCalculator.Add("1,3"));
+	Assert.assertEquals(2,StringCalculator.Add("1,1"));
 }
 }
